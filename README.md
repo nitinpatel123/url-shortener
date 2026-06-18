@@ -1,42 +1,52 @@
 # ✂️ URL Shortener
 
-Full app in a single file — backend + frontend + persistent storage!
+A fast and minimal URL shortener built with Node.js. Shorten long URLs instantly and track visit counts.
 
-## 🚀 Run Locally
-
-```bash
-npm install
-npm start
-# Open http://localhost:3000
-# Data saved in ./data/urls.json
-```
-
-## ☁️ Deploy on Railway (Free) + Persistent Storage
-
-### Step 1 — Push to GitHub
-```bash
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/url-shortener.git
-git push -u origin main
-```
-
-### Step 2 — Deploy on Railway
-1. Go to **railway.app** → login with GitHub
-2. **New Project** → **Deploy from GitHub repo** → select your repo
-3. Click **"Generate Domain"** → your app is live!
-
-### Step 3 — Add Volume (so data never deletes)
-1. In Railway dashboard → click your project
-2. **"Add a service"** → **"Volume"**
-3. Set **Mount Path** → `/data`
-4. Done! ✅ Data will now persist across restarts
+![Node.js](https://img.shields.io/badge/Node.js-18+-green) ![Express](https://img.shields.io/badge/Express-4.x-blue) ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ## ✨ Features
-- Long URL → 6 character short code
-- Data saved to JSON file (survives restarts with Railway Volume)
-- Visit counter
-- History with visit count
-- Entire app in one file!
+
+- 🔗 Shorten any long URL into a 6-character code
+- 📊 Track visit count for each short URL
+- 💾 Persistent storage using JSON file
+- 🔁 Same URL always returns the same short code
+- 📋 One-click copy to clipboard
+- 📱 Responsive UI — works on mobile too
+
+## 🛠 Tech Stack
+
+- **Backend** — Node.js, Express
+- **Frontend** — HTML, CSS, Vanilla JS (single file)
+- **Storage** — JSON file (persistent with Railway Volume)
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js v18+
+- npm
+
+### Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/YOUR_USERNAME/url-shortener.git
+
+# Go into the folder
+cd url-shortener
+
+# Install dependencies
+npm install
+
+# Start the server
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## ☁️ Deployment (Railway)
+
+1. Push code to GitHub
+2. Go to [railway.app](https://railway.app) → **New Project** → **Deploy from GitHub**
+3. Select your repo → click **Generate Domain**
+4. Add a **Volume** with mount path `/data` for persistent storage
+
