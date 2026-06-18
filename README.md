@@ -1,52 +1,49 @@
 # ✂️ URL Shortener
 
-A fast and minimal URL shortener built with Node.js. Shorten long URLs instantly and track visit counts.
+A fast, minimal and efficient URL shortener built with **Node.js + Express**.  
+Turn long URLs into short, shareable links with real-time click tracking.
 
-![Node.js](https://img.shields.io/badge/Node.js-18+-green) ![Express](https://img.shields.io/badge/Express-4.x-blue) ![License](https://img.shields.io/badge/License-MIT-yellow)
+---
 
-## ✨ Features
 
-- 🔗 Shorten any long URL into a 6-character code
-- 📊 Track visit count for each short URL
-- 💾 Persistent storage using JSON file
-- 🔁 Same URL always returns the same short code
-- 📋 One-click copy to clipboard
-- 📱 Responsive UI — works on mobile too
+
+## 🌐 Live Demo
+
+[Visit Live App](https://url-shortener-production-ab7f.up.railway.app)
+---
+
+## 🏷️ Badges
+
+![Node.js](https://img.shields.io/badge/Node.js-18+-green)
+![Express](https://img.shields.io/badge/Express.js-Backend-black)
+![License](https://img.shields.io/badge/License-MIT-blue)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
+---
+
+## 🚀 Features
+
+- 🔗 Convert long URLs into a 6-character short code  
+- 🔁 Same URL always generates same short link  
+- 📊 Track click/visit count for each link  
+- 💾 Persistent JSON storage (Railway Volume supported)  
+- 📋 One-click copy to clipboard  
+- 📱 Fully responsive UI (mobile + desktop)
+
+---
 
 ## 🛠 Tech Stack
 
-- **Backend** — Node.js, Express
-- **Frontend** — HTML, CSS, Vanilla JS (single file)
-- **Storage** — JSON file (persistent with Railway Volume)
+- **Backend:** Node.js, Express.js  
+- **Frontend:** HTML, CSS, JavaScript (Vanilla)  
+- **Storage:** JSON file system  
 
-## 🚀 Getting Started
+---
 
-### Prerequisites
-- Node.js v18+
-- npm
-
-### Installation
+## 📦 Installation
 
 ```bash
-# Clone the repo
-git clone https://github.com/YOUR_USERNAME/url-shortener.git
-
-# Go into the folder
+git clone https://github.com/nitinpatel123/url-shortener.git
 cd url-shortener
-
-# Install dependencies
 npm install
-
-# Start the server
 npm start
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## ☁️ Deployment (Railway)
-
-1. Push code to GitHub
-2. Go to [railway.app](https://railway.app) → **New Project** → **Deploy from GitHub**
-3. Select your repo → click **Generate Domain**
-4. Add a **Volume** with mount path `/data` for persistent storage
-
